@@ -1,0 +1,19 @@
+///$tab CMG PROGRAMADO
+COSTO_MARGINAL_PROGRAMADO:
+LOAD
+    %KEY_BLOQUE_FUENTE_VERSION,
+    %KEY_DICCIONARIO_BARRAS,
+    nombre_barra,
+    cmg,
+    unidad,
+    intervalo,
+    fuente,
+    fecha_version,
+    fecha_hora_version,
+    numero_version,
+    bloque,
+    etapa,
+    hidro,
+    hidro			AS HidroFiltro
+FROM [lib://STG/PLATAFORMA_PROGRAMACION/STG_PRG_CMG_PROGRAMADO_NORMATIVO.qvd]
+(qvd) WHERE fuente='PMP' AND Exists(%KEY_BLOQUE_FUENTE_VERSION);

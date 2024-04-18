@@ -1,0 +1,15 @@
+{
+  "qInfo": {
+    "qId": "05984b23-ba9b-41e9-a74b-c5a91a8a104e",
+    "qType": "variable"
+  },
+  "qMetaDef": {},
+  "qName": "vFiltrosPMP",
+  "qNumberPresentation": {
+    "qType": "U",
+    "qnDec": 10,
+    "qUseThou": 0
+  },
+  "qDefinition": "{<nombre_barra={'Cardones220','Tarapaca220','PAzucar220','Atacama220_BP1','Charrua220','Crucero220','Quillota220','PMontt220'},fuente = {'PMP'},HidroFiltro={'MEDIA'},Fecha = {\"<=$(=MIN({<fuente = {'PMP'},HidroFiltro={'MEDIA'},fecha_hora_version>}DATE(Fecha+30)))\"},fecha_version= {\"$(=MAX({<fuente = {'PMP'},HidroFiltro={'MEDIA'},fecha_hora_version>}fecha_version))\"}>}",
+  "tags": []
+}

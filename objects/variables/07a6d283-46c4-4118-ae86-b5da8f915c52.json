@@ -1,0 +1,15 @@
+{
+  "qInfo": {
+    "qId": "07a6d283-46c4-4118-ae86-b5da8f915c52",
+    "qType": "variable"
+  },
+  "qMetaDef": {},
+  "qName": "vFiltrosBarrasPMP",
+  "qNumberPresentation": {
+    "qType": "U",
+    "qnDec": 10,
+    "qUseThou": 0
+  },
+  "qDefinition": "{<fuente={'PMP'},HidroFiltro={'MEDIA'},fecha_version,  Fecha = {\"<$(=MIN({<fuente = {'PMP'},HidroFiltro={'MEDIA'},fecha_hora_version>}DATE(Fecha+31)))\"}\"}>}",
+  "tags": []
+}
